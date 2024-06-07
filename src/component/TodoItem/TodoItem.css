@@ -1,0 +1,45 @@
+.todo-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 58px;
+    box-sizing: border-box;
+    background-color: var(--wxx-color-bg);
+    color: var(--wxx-color-text1);
+    padding: 4px 12px;
+}
+
+.todo-item-line {
+    border-bottom: 1px solid var(--wxx-color-border2);
+}
+
+.todo-item .checkbox {
+    border-radius: 99px;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+
+.todo-item .input-bar {
+    flex: 1;
+    height: 80%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-right: 8px;
+    box-sizing: border-box;
+    padding: 0 8px;
+    background-color: var(--wxx-color-bg);
+
+}
+
+.todo-item .readonly-bar {
+    flex: 1;
+    font-size: 18px;
+    margin-right: 8px;
+    box-sizing: border-box;
+    padding: 0 8px;
+    background-color: var(--wxx-color-bg);
+
+}

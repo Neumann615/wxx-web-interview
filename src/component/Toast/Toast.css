@@ -1,0 +1,26 @@
+.wxx-toast {
+    position: fixed;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    left: 50%;
+    top: 7%;
+    transform: translateX(-50%);
+    z-index: 99999;
+    background-color: var(--wxx-color-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.wxx-toast img {
+    width: 24px;
+}
+
+.wxx-toast .text {
+    margin: 0 4px;
+    color: var(--wxx-color-text2);
+}
