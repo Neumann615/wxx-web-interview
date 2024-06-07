@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react"
+import {ReactNode, useEffect, useState} from "react"
 import {createPortal} from "react-dom";
 import {createRoot} from "react-dom/client";
 import "./Toast.css"
@@ -6,7 +6,7 @@ import "./Toast.css"
 const TOAST_CONTAINER_ID = 'wxx-toast-container';
 
 interface ToastProps {
-    message: string | React.ReactNode
+    message: string | ReactNode
     duration: number
 }
 
@@ -31,7 +31,7 @@ function Toast(props: ToastProps) {
     ) : null
 }
 
-const showToast = (message, duration = 3000) => {
+const showToast = (message: string | ReactNode, duration = 3000) => {
     // 确保容器存在
     if (!document.getElementById(TOAST_CONTAINER_ID)) {
         const container = document.createElement('div');

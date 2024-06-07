@@ -14,7 +14,7 @@ interface TodoItemProps {
 
 function TodoItem(props: TodoItemProps) {
 
-    const {disabled, extraDom, placeholder, value, hasLine, checked, onClick, hasCheckbox, onChange} = props
+    const {disabled, extraDom, placeholder, value, hasLine, checked, hasCheckbox, onChange} = props
 
     return <div {...props} className={"todo-item " + (hasLine ? "todo-item-line" : "")}>
         {hasCheckbox ? <input checked={checked} className={"checkbox"} type={"checkbox"}></input> : null}
@@ -34,4 +34,4 @@ TodoItem.defaultProps = {
     value: ""
 }
 
-export {TodoItem, TodoItemProps}
+export {TodoItem}

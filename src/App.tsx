@@ -96,7 +96,7 @@ function App() {
     useEffect(() => {
         if (isScroll && dataList?.length) {
             if (listRef.current) {
-                listRef.current.scrollTo(0, listRef.current.scrollHeight);
+                listRef.current?.scrollTo(0, listRef.current?.scrollHeight);
             }
         }
         return setIsScroll(false)
@@ -123,7 +123,7 @@ function App() {
             </div>
             <div className={"search"}>
                 <TodoItem value={text} onChange={(e) => {
-                    setText(e.target.value)
+                    setText(e?.target?.value)
                 }
                 } hasCheckbox={false} extraDom={text?.length ? <Button onClick={addData}>添加</Button> : null}></TodoItem>
             </div>
